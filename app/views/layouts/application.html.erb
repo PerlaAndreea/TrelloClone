@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+  <title>Spark</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_pack_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag    'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+
+  <body>
+
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container-fluid">
+        <%= link_to "Spark", root_path, class: "navbar-brand" %>
+    </nav>
+
+    <div class="container-fluid">
+    <%= yield %>
+    </div>
+
+        <footer class="footer text-muted bg-light">
+      <div class="container">
+
+        <span>© <%= Date.today.year %> Your Company</span>
+      </div>
+    </footer>
+  </body>
+
+
+
+</html>
